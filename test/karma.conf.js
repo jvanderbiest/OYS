@@ -14,7 +14,10 @@ module.exports = function(config) {
     },
     browsers: ['Chrome'],
     reporters: ['progress', 'coverage'],
-
+      coverageReporter: {
+        type : 'lcovonly',
+        dir : 'coverage/'
+      },
     autoWatch: true,
 
     browserify: {

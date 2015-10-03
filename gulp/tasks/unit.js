@@ -16,6 +16,8 @@ gulp.task('unit', ['views'], function() {
     .on('error', function(err) {
       // Make sure failed tests cause gulp to exit non-zero
       throw err;
-    });
-
+    }).on('finish', function() {
+        gulp.src('./coverage/lcov.info')
+            .pipe(coveralls());
+      });
 });
