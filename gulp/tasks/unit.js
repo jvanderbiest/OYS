@@ -3,6 +3,7 @@
 var gulp   = require('gulp');
 var karma  = require('gulp-karma');
 var config = require('../config');
+var coveralls = require('gulp-coveralls');
 
 gulp.task('unit', ['views'], function() {
 
@@ -13,11 +14,13 @@ gulp.task('unit', ['views'], function() {
       configFile: config.test.karma,
       action: 'run'
     }))
+      .on('end', function() {
+        console.log("pushing to coveralls");
+        gulp.src('./coverage/**/lcov.info')
+            .pipe(coveralls());
+      })
     .on('error', function(err) {
       // Make sure failed tests cause gulp to exit non-zero
       throw err;
-    }).on('finish', function() {
-        gulp.src('./coverage/lcov.info')
-            .pipe(coveralls());
-      });
+    })
 });
