@@ -80,7 +80,10 @@
     "protractor": "npm run protractor test/protractor.conf.js"
   },
   "dependencies": {
+    "browser-sync": "^2.9.8",
+    "debowerify": "^1.3.1",
     "gulp-autoprefixer": "^3.0.2",
+    "gulp-sass": "^2.0.4",
     "karma": "^0.13.10"
   }
 }
