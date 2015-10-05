@@ -2,16 +2,16 @@
 
 describe('on run', function() {
 
-    var scope;
+    var scope, $rootScope;
 
     beforeEach(module('app'));
-    beforeEach(inject(function ($rootScope, _$compile_) {
-        scope = $rootScope.$new();
-        scope.$digest()
+    beforeEach(inject(function (_$rootScope_) {
+        $rootScope = _$rootScope_;
     }));
 
-    it('should change state when broadcasting', function() {
-        scope.$broadcast('$stateChangeStart');
-        // todo assert
+    it('should change page title when state changes successfully', function() {
+        var eventData = { title: 'index' };
+        $rootScope.$broadcast('$stateChangeSuccess', eventData);
+        expect($rootScope.pageTitle).toBe('index \u2014 Example Application');
     });
 });

@@ -7,6 +7,8 @@ function OnRun($rootScope, AppSettings) {
 
   // change page title based on state
   $rootScope.$on('$stateChangeSuccess', function(event, toState) {
+    dump("DEBUG: State Changed");
+
     $rootScope.pageTitle = '';
 
     if ( toState.title ) {
@@ -16,7 +18,6 @@ function OnRun($rootScope, AppSettings) {
 
     $rootScope.pageTitle += AppSettings.appTitle;
   });
-
 }
 
 module.exports = OnRun;

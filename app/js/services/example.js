@@ -11,7 +11,6 @@ function ExampleService($q, $http) {
 
   service.get = function() {
     var deferred = $q.defer();
-
     $http.get('apiPath').success(function(data) {
         deferred.resolve(data);
     }).error(function(err, status) {
