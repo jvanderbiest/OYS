@@ -22,6 +22,9 @@ build/Release
 node_modules
 bower_components
 
+# prod configuration
+*.js
+
 # Build files
 build
 templates.js
@@ -32,5 +35,3 @@ templates.js
 #coveralls
 .coveralls.yml
 
-# prod configuration
-gulp/settings_prod.js

@@ -3,8 +3,8 @@
 var useProduction = (process.env.NODE_ENV === "production");
 
 var settings;
-if (useProduction) { settings = require("./settings_prod"); }
-else { settings = require("./settings_dev"); }
+if (useProduction) { settings = require("./settings_production"); }
+else { settings = require("./settings_development"); }
 
 var config = {
   'mongoDb': settings.mongoDb,
