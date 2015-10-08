@@ -16,7 +16,7 @@ gulp.task('unit', ['views'], function() {
     }))
       .on('end', function() {
         console.log("pushing to coveralls");
-        gulp.src('./coverage/!**!/lcov.info')
+        gulp.src('coverage/**/lcov.info')
             .pipe(coveralls());
       })
     .on('error', function(err) {

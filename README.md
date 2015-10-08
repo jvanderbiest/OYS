@@ -6,3 +6,5 @@ OYS - Order Your Sandwich
 ## What
 
 Simple application that let users order their sandwiches. Currently a sandbox application to understand nodeJS and other javascript libraries.
+
+Currently working on Express Server api communicating with MongoDb
