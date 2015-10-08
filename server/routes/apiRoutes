@@ -1,0 +1,5 @@
+function setup(app, handlers) {
+     app.get('/api/catalog', handlers.catalog.get);
+}
+
+module.exports = { setup: setup };

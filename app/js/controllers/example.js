@@ -2,17 +2,16 @@
 
 var controllersModule = require('./_index');
 
-/**
- * @ngInject
- */
-function ExampleCtrl() {
+function HomeController() {
 
   // ViewModel
   var vm = this;
 
-  vm.title = 'AngularJS, Gulp, and Browserify!';
+  vm.title = 'Order your sandwich';
   vm.number = 1234;
+
+
 
 }
 
-controllersModule.controller('ExampleCtrl', ExampleCtrl);
+controllersModule.controller('HomeController', HomeController);
