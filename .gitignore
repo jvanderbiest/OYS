@@ -31,3 +31,6 @@ templates.js
 
 #coveralls
 .coveralls.yml
+
+# prod configuration
+gulp/settings_prod.js

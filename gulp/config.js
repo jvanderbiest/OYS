@@ -1,6 +1,13 @@
 'use strict';
 
-module.exports = {
+var useProduction = (process.env.NODE_ENV === "production");
+
+var settings;
+if (useProduction) { settings = require("./settings_prod"); }
+else { settings = require("./settings_dev"); }
+
+var config = {
+  'mongoDb': settings.mongoDb,
 
   'browserPort'  : 3000,
   'UIPort'       : 3001,
@@ -57,5 +64,6 @@ module.exports = {
     'karma': 'test/karma.conf.js',
     'protractor': 'test/protractor.conf.js'
   }
-
 };
+
+module.exports = config;

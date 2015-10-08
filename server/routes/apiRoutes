@@ -1,3 +1,5 @@
+'use strict';
+
 function setup(app, handlers) {
      app.get('/api/catalog', handlers.catalog.get);
 }
