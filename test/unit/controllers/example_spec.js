@@ -11,7 +11,7 @@ describe('Unit: ExampleCtrl', function() {
     angular.mock.module('app');
 
     angular.mock.inject(function($controller) {
-      ctrl = $controller('ExampleCtrl');
+      ctrl = $controller('HomeController');
     });
   });
 
@@ -24,7 +24,7 @@ describe('Unit: ExampleCtrl', function() {
   });
 
   it('should have a title variable equal to \'AngularJS, Gulp, and Browserify!\'', function() {
-    expect(ctrl.title).toEqual('AngularJS, Gulp, and Browserify!');
+    expect(ctrl.title).toEqual('Order your sandwich');
   });
 
 });
