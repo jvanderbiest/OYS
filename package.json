@@ -1,22 +1,12 @@
 {
   "name": "order-your-sandwich",
   "version": "0.0.1",
-  "author": "Jonas Vah der Biest <jvanderbiest@gmail.com>",
+  "author": "Jonas Van der Biest <jvanderbiest@gmail.com>",
   "description": "Simple 'learning' order your sandwich application that could help me to use new JS technologies",
   "repository": {
     "type": "git",
     "url": "https://github.com/jvanderbiest/oys.git"
   },
-  "keywords": [
-    "express",
-    "gulp",
-    "browserify",
-    "angular",
-    "sass",
-    "karma",
-    "jasmine",
-    "protractor"
-  ],
   "private": true,
   "engines": {
     "node": ">=0.12.x"
@@ -81,7 +71,7 @@
     "test": "karma start test/karma.conf.js",
     "preprotractor": "npm run update-webdriver",
     "protractor": "npm run protractor test/protractor.conf.js",
-    "start": "node node_modules/gulp/bin/gulp build"
+    "start": "node ./node_modules/gulp/bin/gulp deploy"
   },
   "dependencies": {
     "browser-sync": "^2.9.8",
