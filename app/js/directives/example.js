@@ -18,8 +18,4 @@ function exampleDirective() {
 
 }
 
-function removeMeJustTesting() {
-
-}
-
 directivesModule.directive('exampleDirective', exampleDirective);

@@ -1,5 +1,3 @@
-/*global angular */
-
 'use strict';
 
 describe('Unit: ExampleCtrl', function() {
@@ -23,8 +21,8 @@ describe('Unit: ExampleCtrl', function() {
     expect(ctrl.number).toEqual(1234);
   });
 
-  it('should have a title variable equal to \'AngularJS, Gulp, and Browserify!\'', function() {
-    expect(ctrl.title).toEqual('Order your sandwich');
+  it('should have a title variable equal to undefined', function() {
+    expect(ctrl.title).toBeUndefined();
   });
 
 });

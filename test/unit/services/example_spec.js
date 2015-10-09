@@ -6,9 +6,9 @@ describe('ExampleService', function() {
   var $httpBackend;
 
   beforeEach(module('app'));
-  beforeEach(inject(function (ExampleService, _$httpBackend_) {
+  beforeEach(inject(function (ApiService, _$httpBackend_) {
 
-    service = ExampleService;
+    service = ApiService;
     $httpBackend = _$httpBackend_;
   }));
 
@@ -23,7 +23,7 @@ describe('ExampleService', function() {
     service.get().then(successSpy, failureSpy);
 
     var data = {};
-    $httpBackend.expect('GET', 'apiPath').respond(200, data);
+    $httpBackend.expect('GET', 'api/catalog').respond(200, data);
     $httpBackend.flush();
     expect(successSpy).toHaveBeenCalled();
     expect(failureSpy).not.toHaveBeenCalled();
@@ -36,7 +36,7 @@ describe('ExampleService', function() {
     service.get().then(successSpy, failureSpy);
 
     var data = {};
-    $httpBackend.expect('GET', 'apiPath').respond(500, data);
+    $httpBackend.expect('GET', 'api/catalog').respond(500, data);
     $httpBackend.flush();
     expect(failureSpy).toHaveBeenCalled();
     expect(successSpy).not.toHaveBeenCalled();

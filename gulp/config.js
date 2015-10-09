@@ -9,6 +9,11 @@ else { settings = require("./settings_development"); }
 var config = {
   'mongoDb': settings.mongoDb,
 
+  'dbData': {
+    'catalogName': 'Bite me broodjes service',
+    'catalogId': '5616d574bebb5e8421f5d0e5'
+  },
+
   'browserPort'  : 3000,
   'UIPort'       : 3001,
   'serverPort'   : 3002,

@@ -7,7 +7,7 @@ function OnRun($rootScope, AppSettings) {
 
   // change page title based on state
   $rootScope.$on('$stateChangeSuccess', function(event, toState) {
-    dump("DEBUG: State Changed");
+    console.log("DEBUG: State Changed");
 
     $rootScope.pageTitle = '';
 

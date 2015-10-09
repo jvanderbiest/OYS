@@ -1,10 +1,12 @@
 'use strict';
 
 var http    = require('http');
+var fs = require('fs');
 var express = require('express');
 var morgan  = require('morgan');
 var catalogHandler = require('./handlers/catalog');
 var routes = require('./routes/apiRoutes');
+var dbConnection = require('./database/dbConnection');
 
 module.exports = function(url, port) {
     return { start: start };
@@ -19,8 +21,9 @@ module.exports = function(url, port) {
 
         var server = express();
 
-        // log all requests to the console
-        server.use(morgan('dev'));
+        // log all requests to a file
+        var serverLogStream = fs.createWriteStream(__dirname + '/../server.log', {flags: 'a'});
+        server.use(morgan('combined', {stream: serverLogStream}));
         server.use(express.static(url));
 
         // Serve index.html for all routes to leave routing up to Angular
@@ -40,8 +43,6 @@ module.exports = function(url, port) {
         });
 
         routes.setup(server, handlers);
-
-
         s.listen(port);
     }
 };
