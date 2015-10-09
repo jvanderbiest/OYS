@@ -3,11 +3,10 @@
 var useProduction = (process.env.NODE_ENV === "production");
 
 var settings;
-if (useProduction) { settings = require("./settings_production"); }
-else { settings = require("./settings_development"); }
+if (!useProduction) { settings = require("./settings_development"); }
 
 var config = {
-  'mongoDb': settings.mongoDb,
+  'mongoDb': process.env.MONGO_DB_CONN_STRING || settings.mongoDb,
 
   'dbData': {
     'catalogName': 'Bite me broodjes service',
