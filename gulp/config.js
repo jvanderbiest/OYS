@@ -15,7 +15,7 @@ var config = {
 
   'browserPort'  : 3000,
   'UIPort'       : 3001,
-  'serverPort'   : 3002,
+  'serverPort'   : process.env.PORT || 3002,
 
   'styles': {
     'src' : 'app/styles/**/*.scss',
