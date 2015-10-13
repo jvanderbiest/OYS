@@ -1,19 +1,62 @@
-<!doctype html>
-<html class="no-js">
-  <head>
-      <base href="/">
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title ng-bind="pageTitle"></title>
-      <meta name="description" content="">
-      <meta name="viewport" content="width=device-width">
+<!DOCTYPE html>
 
-      <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body>
+<html>
 
-      <div ui-view></div>
+<head>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title ng-bind="pageTitle"></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <script src="js/main.js"></script>
-  </body>
+    <!-- Favicons -->
+    <link rel="shortcut icon" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="shortcut icon" sizes="128x128" href="images/favicons/favicon-128x128.png">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Modernizr script has to be in head -->
+    <!--<script src="scripts/vendor/modernizr.min.js"></script>-->
+</head>
+
+<body>
+<!--[if lt IE 9]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<header class="header background-white">
+    <div class="grid">
+    <div class="logo">
+        <a href="/" title="Order Your Sandwich" class="uppercase">
+            <span class="highlighted">O</span>rder<span class="highlighted">Y</span>our<span class="highlighted">S</span>andwich
+            </a>
+    </div>
+    <nav class="navigation">
+        <ul class="menu">
+            <li class="item">
+                <a href="#" class="uppercase">Home</a>
+            </li>
+            <li class="item active">
+                <a href="#" class="uppercase">Price List</a>
+            </li>
+            <li class="item">
+                <a href="#" class="uppercase">Order</a>
+            </li>
+            <li class="item">
+                <a href="#" class="uppercase">History</a>
+            </li>
+        </ul>
+    </nav>
+    </div>
+</header>
+
+<div ui-view></div>
+
+<footer class="footer"></footer>
+
+<script src="js/main.js"></script>
+
+</body>
 </html>

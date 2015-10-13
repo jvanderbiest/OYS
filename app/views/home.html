@@ -1,6 +1,48 @@
-<h1 class="heading -large">{{ home.title }}</h1>
+    <main class="main">
+        <section id="home" class="hero section">
+            <div class="grid">
 
-<h3 class="heading -medium">Here is a fancy number served up courtesy of Angular: <span class="number-example">{{ home.number }}</span></h3>
+            </div>
+        </section>
+
+        <section class="pricing section">
+            <div class="grid">
+            <h2 class="text-center">Price list</h2>
+            <p class="description text-center">The price list is based on the vendor for today. This venue can only be changed by an administrator.
+                The selected venue is &quot;{{ home.catalog.name }}&quot;.</p>
+            <article class="price">
+                <img src="images/layout/sandwich-section.png" alt="sandwich prices">
+                <h1 class="text-center">{{ home.catalog.type1.name }}</h1>
+                <p><div ng-repeat="item in home.catalog.type1.items">{{ item.name }}
+                <p class="description small">{{item.description}}</p>
+            </div></p>
+            </article>
+            <article class="price">
+                <img src="images/layout/salad-section.png" alt="salad prices">
+                <h1 class="text-center">{{ home.catalog.type2.name }}</h1>
+                <p><div ng-repeat="item in home.catalog.type2.items">{{ item.name }}
+                <p class="description small">{{item.description}}</p>
+            </div></p>
+            </article>
+            <article class="price">
+                <img src="images/layout/other-section.png" alt="other prices">
+                <h1 class="text-center">{{ home.catalog.type3.name }}</h1>
+                <p><div ng-repeat="item in home.catalog.type3.items">{{ item.name }}
+                <p class="description small">{{item.description}}</p>
+            </div></p>
+            </article>
+            </div>
+        </section>
+    </main>
+
+
+
+    <div ng-repeat="type in home.catalog.types">
+        <div>{{type.name}}</div>
+        <div ng-repeat="item in type.items">
+            <div>{{item.name}} {{item.priceSmall}}</div>
+            <span>{{item.description}}</span>
+    </div>
 
 <!--
 <img src="images/angular.png" height="100" example-directive />

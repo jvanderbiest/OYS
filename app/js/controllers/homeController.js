@@ -9,7 +9,11 @@ function HomeController(ApiService) {
 
   ApiService.get().then(function (result) {
     console.log("api service has been called" + result[0]);
-    vm.title = result[0].name;
+    vm.catalog = {};
+    vm.catalog.name = result[0].name;
+    vm.catalog.type1 = result[0].types[0];
+    vm.catalog.type2 = result[0].types[1];
+    vm.catalog.type3 = result[0].types[2];
   });
   vm.number = 1234;
 }

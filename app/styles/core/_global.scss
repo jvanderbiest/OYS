@@ -1,0 +1,68 @@
+/* Global styles */
+::selection {
+	background: $blue;
+	color: white;
+  /*text-shadow: 0px 1px 1px rgba(black, 0.6);*/
+}
+
+::-moz-selection {
+	background: $blue;
+	color: white;
+  /*text-shadow: 0px 1px 1px rgba(black, 0.6);*/
+}
+
+html {
+	font-size: 62.5%;
+  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit; -moz-box-sizing: inherit; box-sizing: inherit;
+}
+
+body {
+	@include font-default();
+  font-size: 2.4rem;
+  color: $grey;
+  background: #f4f4f4;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+.grid {
+	@include row;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.background-white {
+	background: white;
+}
+
+.section {
+	padding: 80px 20px;
+	@include clearfix;
+	.description {
+		margin-bottom: 50px;
+	}
+
+  	.small {
+	  font-size: 1.8rem;
+	  margin-bottom: 10px;
+	}
+	.section-footer {
+		clear: both;
+		padding-top: 60px;
+	}
+}

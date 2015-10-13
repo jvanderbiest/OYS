@@ -4,14 +4,13 @@ module.exports = [
         types: [
             {
                 _id:  '5616d574bebb5e8421f5d0e5',
-                name: 'sandwich', items: [
+                name: 'Sandwiches', items: [
                 {
                     name: 'Kaas 1: mosterd, peterselie',
                     description: '',
                     priceSmall: 2.30,
                     priceLarge: null,
                     image: '',
-                    type: 'sandwich'
                 },
                 {
 
@@ -460,7 +459,7 @@ module.exports = [
             ]
             },
             {
-                name: 'salad', items: [
+                name: 'Salads', items: [
                 {
 
                     name: 'Salade neptune',
@@ -605,7 +604,7 @@ module.exports = [
             ]
             },
             {
-                name: 'other', items: [
+                name: 'Other', items: [
                 {
 
                     name: 'Soep',
