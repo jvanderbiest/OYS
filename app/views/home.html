@@ -5,17 +5,34 @@
             </div>
         </section>
 
-        <section class="pricing section">
+        <section id="pricing" class="pricing section">
             <div class="grid">
+                <a name="price-list"></a>
             <h2 class="text-center">Price list</h2>
             <p class="description text-center">The price list is based on the vendor for today. This venue can only be changed by an administrator.
                 The selected venue is &quot;{{ home.catalog.name }}&quot;.</p>
             <article class="price">
                 <img src="images/layout/sandwich-section.png" alt="sandwich prices">
                 <h1 class="text-center">{{ home.catalog.type1.name }}</h1>
-                <p><div ng-repeat="item in home.catalog.type1.items">{{ item.name }}
-                <p class="description small">{{item.description}}</p>
-            </div></p>
+
+
+                <div ng-repeat="item in home.catalog.type1.items">
+                    <div style="clear:both;">
+                        <div style="float:left; width: 5%;">
+                            <input type="checkbox" />
+                        </div>
+                        <div style="float:left; width: 80%;">
+                            {{ item.name }}
+                            </div>
+                        <div style="float:left; width: 15%;">
+                            {{ item.priceSmall }}
+                        </div>
+                    </div>
+                    <div style="float:left; width: 100%;">
+                        <p class="description small">{{item.description}}</p>
+                    </div>
+                </div>
+
             </article>
             <article class="price">
                 <img src="images/layout/salad-section.png" alt="salad prices">
@@ -32,6 +49,14 @@
             </div></p>
             </article>
             </div>
+        </section>
+
+        <section id="order" class="order section">
+
+        </section>
+
+        <section id="history" class="history section">
+
         </section>
     </main>
 
