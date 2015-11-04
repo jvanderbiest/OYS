@@ -10,49 +10,50 @@
                 <a name="price-list"></a>
             <h2 class="text-center">Price list</h2>
             <p class="description text-center">The price list is based on the vendor for today. This venue can only be changed by an administrator.
-                The selected venue is &quot;{{ home.catalog.name }}&quot;.</p>
+                The selected venue is &quot;{{ vm.catalog.name }}&quot;.</p>
             <article class="price">
                 <img src="images/layout/sandwich-section.png" alt="sandwich prices">
-                <h1 class="text-center">{{ home.catalog.type1.name }}</h1>
+                <h1 class="text-center">{{ vm.catalog.types[0].name }}</h1>
 
-
-                <div ng-repeat="item in home.catalog.type1.items">
+                <div ng-repeat="item in vm.catalog.types[0].items">
                     <div style="clear:both;">
                         <div style="float:left; width: 5%;">
-                            <input type="checkbox" />
+                            <input type="checkbox" id="{{item.xid}}" data-checklist-model="vm.orders" data-checklist-value="item" />
                         </div>
-                        <div style="float:left; width: 80%;">
-                            {{ item.name }}
+                        <div  style="float:left; width: 80%;">
+                            <label for="{{item.xid}}">{{ item.name }}</label>
                             </div>
                         <div style="float:left; width: 15%;">
-                            {{ item.priceSmall }}
+                            <span>{{ item.priceSmall }}</span>
                         </div>
                     </div>
                     <div style="float:left; width: 100%;">
-                        <p class="description small">{{item.description}}</p>
+                        <p class="description small"><span>{{item.description}}</span></p>
                     </div>
                 </div>
 
             </article>
             <article class="price">
                 <img src="images/layout/salad-section.png" alt="salad prices">
-                <h1 class="text-center">{{ home.catalog.type2.name }}</h1>
-                <p><div ng-repeat="item in home.catalog.type2.items">{{ item.name }}
+                <h1 class="text-center">{{ vm.catalog.types[1].name }}</h1>
+                <p><div ng-repeat="item in vm.catalog.types[1].items">{{ item.name }}
                 <p class="description small">{{item.description}}</p>
             </div></p>
             </article>
             <article class="price">
                 <img src="images/layout/other-section.png" alt="other prices">
-                <h1 class="text-center">{{ home.catalog.type3.name }}</h1>
-                <p><div ng-repeat="item in home.catalog.type3.items">{{ item.name }}
+                <h1 class="text-center">{{ vm.catalog.types[2].name }}</h1>
+                <p><div ng-repeat="item in vm.catalog.types[2].items">{{ item.name }}
                 <p class="description small">{{item.description}}</p>
             </div></p>
             </article>
             </div>
         </section>
 
-        <section id="order" class="order section">
-
+        <section id="order" class="order section" ng-controller="OrderController">
+            <div ng-repeat="item in vm.orders">
+                item: {{item.name}}
+            </div>
         </section>
 
         <section id="history" class="history section">
@@ -61,13 +62,6 @@
     </main>
 
 
-
-    <div ng-repeat="type in home.catalog.types">
-        <div>{{type.name}}</div>
-        <div ng-repeat="item in type.items">
-            <div>{{item.name}} {{item.priceSmall}}</div>
-            <span>{{item.description}}</span>
-    </div>
 
 <!--
 <img src="images/angular.png" height="100" example-directive />

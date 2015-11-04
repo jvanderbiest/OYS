@@ -11,7 +11,9 @@
   "engines": {
     "node": ">=0.12.x"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "angular-sanitize": "^1.4.7"
+  },
   "scripts": {
     "pretest": "npm install",
     "test": "karma start test/karma.conf.js",

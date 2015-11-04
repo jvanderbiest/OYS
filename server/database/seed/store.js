@@ -1,9 +1,9 @@
 module.exports = [
     {
+        _id: '5616d574bebb5e8421f5d0e5',
         name: 'Bite me broodjes service',
         types: [
             {
-                _id:  '5616d574bebb5e8421f5d0e5',
                 name: 'Sandwiches', items: [
                 {
                     name: 'Kaas 1: mosterd, peterselie',
@@ -13,7 +13,6 @@ module.exports = [
                     image: '',
                 },
                 {
-
                     name: 'Kaas 2: boter',
                     description: '',
                     priceSmall: 2.20,
@@ -21,7 +20,6 @@ module.exports = [
                     image: ''
                 },
                 {
-
                     name: 'Hesp, boter',
                     description: '',
                     priceSmall: 2.20,
@@ -29,7 +27,6 @@ module.exports = [
                     image: ''
                 },
                 {
-
                     name: 'Kaas en hesp',
                     description: '',
                     priceSmall: 2.40,
@@ -37,7 +34,6 @@ module.exports = [
                     image: ''
                 },
                 {
-
                     name: 'Salami',
                     description: '',
                     priceSmall: 2.20,
@@ -45,15 +41,13 @@ module.exports = [
                     image: ''
                 },
                 {
-
-                    name: 'Préparé',
+                    name: 'PrÃ©parÃ©',
                     description: '',
                     priceSmall: 2.50,
                     priceLarge: null,
                     image: ''
                 },
                 {
-
                     name: 'Varkensgebraad',
                     description: '',
                     priceSmall: 2.50,
@@ -61,7 +55,6 @@ module.exports = [
                     image: ''
                 },
                 {
-
                     name: 'Kipsla',
                     description: '',
                     priceSmall: 2.40,
@@ -69,7 +62,6 @@ module.exports = [
                     image: ''
                 },
                 {
-
                     name: 'Kip-curry',
                     description: '',
                     priceSmall: 2.40,
@@ -77,7 +69,6 @@ module.exports = [
                     image: ''
                 },
                 {
-
                     name: 'Eiersla',
                     description: '',
                     priceSmall: 2.30,
@@ -85,7 +76,6 @@ module.exports = [
                     image: ''
                 },
                 {
-
                     name: 'Zalm, boter, ui',
                     description: '',
                     priceSmall: 3.20,
@@ -93,7 +83,6 @@ module.exports = [
                     image: ''
                 },
                 {
-
                     name: 'Krabsla',
                     description: '',
                     priceSmall: 2.50,
@@ -101,59 +90,51 @@ module.exports = [
                     image: ''
                 },
                 {
-
                     name: 'Garnaalsla',
                     description: '',
                     priceSmall: 3.10,
                     priceLarge: null,
                     image: ''
                 }, {
-
                     name: 'Tonijnsla',
                     description: '',
                     priceSmall: 2.40,
                     priceLarge: null,
                     image: ''
                 }, {
-
                     name: 'Tonijn cocktail',
                     description: '',
                     priceSmall: 2.40,
                     priceLarge: null,
                     image: ''
                 }, {
-
                     name: 'Tonijn speciaal',
-                    description: 'ananas, gruyère, tabasco',
+                    description: 'ananas, gruyÃ¨re, tabasco',
                     priceSmall: 2.70,
                     priceLarge: null,
                     image: ''
                 },
                 {
-
                     name: 'Tartaar speciaal',
-                    description: 'préparé, tartaar, ei',
+                    description: 'prÃ©parÃ©, tartaar, ei',
                     priceSmall: 2.80,
                     priceLarge: null,
                     image: ''
                 },
                 {
-
                     name: 'Speciaal',
-                    description: 'préparé, ui, tomaten ketchup',
+                    description: 'prÃ©parÃ©, ui, tomaten ketchup',
                     priceSmall: 2.90,
                     priceLarge: null,
                     image: ''
                 },
                 {
-
                     name: 'Pick-nick',
                     description: 'gebraad, cocktailsaus, sla, tomaat, augurk',
                     priceSmall: 3.00,
                     priceLarge: null,
                     image: ''
                 }, {
-
                     name: 'Mozarella',
                     description: 'basilicum, tomaat, sla, olijfolie',
                     priceSmall: 2.90,
@@ -161,21 +142,18 @@ module.exports = [
                     image: ''
                 },
                 {
-
                     name: 'Martino',
-                    description: 'préparé, mosterd, augurk, ansjovis, tabasco, tomaat',
+                    description: 'prÃ©parÃ©, mosterd, augurk, ansjovis, tabasco, tomaat',
                     priceSmall: 3.00,
                     priceLarge: null,
                     image: ''
                 }, {
-
                     name: 'Limburgse martino',
-                    description: 'préparé, ui, tabasco, Am. Saus, ei, tomaat, sla',
+                    description: 'prÃ©parÃ©, ui, tabasco, Am. Saus, ei, tomaat, sla',
                     priceSmall: 3.00,
                     priceLarge: null,
                     image: ''
                 }, {
-
                     name: 'Mozarella komkommer',
                     description: 'rozijnen, walnoten, nootolie, sla',
                     priceSmall: 3.40,
@@ -183,65 +161,56 @@ module.exports = [
                     image: ''
                 },
                 {
-
                     name: 'Smos',
                     description: 'hesp, kaas, mayo, augurk, ei, tomaat, sla',
                     priceSmall: 2.90,
                     priceLarge: null,
                     image: ''
                 }, {
-
                     name: 'Smos - kaas',
                     description: 'mayo, augurk, ei, tomaat, sla',
                     priceSmall: 2.70,
                     priceLarge: null,
                     image: ''
                 }, {
-
                     name: 'Smos - hesp',
                     description: 'mayo, augurk, ei, tomaat, sla',
                     priceSmall: 2.70,
                     priceLarge: null,
                     image: ''
                 }, {
-
                     name: 'Maison',
                     description: 'ham, kaas, cocktailsaus, augurk, mosterd, sla, tomaat',
                     priceSmall: 2.90,
                     priceLarge: null,
                     image: ''
                 }, {
-
                     name: 'Club',
-                    description: 'préparé, mayo, tuinkers, ei, tomaat',
+                    description: 'prÃ©parÃ©, mayo, tuinkers, ei, tomaat',
                     priceSmall: 3.00,
                     priceLarge: null,
                     image: ''
                 },
                 {
-
-                    name: 'Varié',
+                    name: 'VariÃ©',
                     description: 'hesp, cocktailsaus, ansjovis, tomaat, augurk, sla',
                     priceSmall: 2.90,
                     priceLarge: null,
                     image: ''
                 },
                 {
-
-                    name: 'Vegetariër',
+                    name: 'VegetariÃ«r',
                     description: 'seldersla, asperges, augurk, tomaat, sla',
                     priceSmall: 2.80,
                     priceLarge: null,
                     image: ''
                 }, {
-
                     name: 'Mozarella speciaal',
                     description: 'pesto, zontomaat, parma, rucola, pijnboompitten',
                     priceSmall: 4.00,
                     priceLarge: null,
                     image: ''
                 }, {
-
                     name: 'Tonijntino',
                     description: 'tonijn, paprika, tabasco, mosterd, ansjovis, tomaat, augurk',
                     priceSmall: 2.90,
@@ -249,21 +218,18 @@ module.exports = [
                     image: ''
                 },
                 {
-
                     name: 'Fijn lijntje',
                     description: 'philadelphia, ui, tuinkers, tomaat',
                     priceSmall: 2.80,
                     priceLarge: null,
                     image: ''
                 }, {
-
                     name: 'Tropical',
                     description: 'ham, kaas, cocktailsaus, ananas, sla',
                     priceSmall: 2.90,
                     priceLarge: null,
                     image: ''
                 }, {
-
                     name: 'Mozarella - serrano',
                     description: 'pesto, tuinkers, gedroogde tomaten',
                     priceSmall: 3.40,
@@ -271,14 +237,12 @@ module.exports = [
                     image: ''
                 },
                 {
-
                     name: 'Mozarella - zalm',
                     description: 'tomaat, ui, olie, sla',
                     priceSmall: 3.40,
                     priceLarge: null,
                     image: ''
                 }, {
-
                     name: 'Citroen - zalm',
                     description: 'ui, citroensap, peterselie',
                     priceSmall: 3.40,
@@ -286,119 +250,102 @@ module.exports = [
                     image: ''
                 },
                 {
-
                     name: 'Zalm - tartaar',
                     description: 'peterselie, tomaat, sla',
                     priceSmall: 3.40,
                     priceLarge: null,
                     image: ''
                 }, {
-
                     name: 'Effi - serrano',
                     description: 'komkommer, tomaat, sla',
                     priceSmall: 3.40,
                     priceLarge: null,
                     image: ''
                 }, {
-
                     name: 'Effi - salami',
                     description: 'komkommer, tomaat, sla',
                     priceSmall: 3.40,
                     priceLarge: null,
                     image: ''
                 }, {
-
                     name: 'Brie',
                     description: 'rozijnen, tuinkers, honing',
                     priceSmall: 3.40,
                     priceLarge: null,
                     image: ''
                 }, {
-
                     name: 'Brie - pijnboompitjes',
                     description: 'rozijnen, tuinkers, honing',
                     priceSmall: 3.40,
                     priceLarge: null,
                     image: ''
                 }, {
-
                     name: 'Brie - nootolie',
                     description: 'zonnebloempitjes, tuinkers',
                     priceSmall: 3.40,
                     priceLarge: null,
                     image: ''
                 }, {
-
                     name: 'Geitenkaas',
                     description: 'komkommer, tuinkers, sap van zontomaatjes',
                     priceSmall: 3.40,
                     priceLarge: null,
                     image: ''
                 }, {
-
                     name: 'Perzik - gebraad',
                     description: 'perzik, cocktailsaus',
                     priceSmall: 3.00,
                     priceLarge: null,
                     image: ''
                 }, {
-
                     name: 'Kip - ananas',
                     description: '',
                     priceSmall: 2.70,
                     priceLarge: null,
                     image: ''
                 }, {
-
                     name: 'Kip - perzik',
                     description: '',
                     priceSmall: 2.70,
                     priceLarge: null,
                     image: ''
                 }, {
-
                     name: 'Kippenblokjes',
                     description: 'komkommer, mayo, wortel, sla, tomaat',
                     priceSmall: 3.40,
                     priceLarge: null,
                     image: ''
                 }, {
-
                     name: 'Kippewit',
                     description: 'cocktailsaus, ei, ananas, tuinkers',
                     priceSmall: 3.00,
                     priceLarge: null,
                     image: ''
                 }, {
-
-                    name: 'Préparé - zilverui',
+                    name: 'PrÃ©parÃ© - zilverui',
                     description: 'tomaten ketchup, ei, sla',
                     priceSmall: 3.00,
                     priceLarge: null,
                     image: ''
                 }, {
-
                     name: 'Eiersla speciaal',
                     description: 'spekjes, komkommer, tomaat, sla',
                     priceSmall: 3.40,
                     priceLarge: null,
                     image: ''
                 }, {
-
                     name: 'Boulette - kriekenconfituur',
                     description: '',
                     priceSmall: 2.90,
                     priceLarge: null,
                     image: ''
                 }, {
-
                     name: 'Boulette - tartaar',
                     description: 'ei, tuinkers, tomaat',
                     priceSmall: 3.40,
                     priceLarge: null,
                     image: ''
                 }, {
-
                     name: 'Boulette',
                     description: 'mayo, ui, curry ketchup',
                     priceSmall: 2.90,
@@ -504,8 +451,8 @@ module.exports = [
                     image: ''
                 }, {
 
-                    name: 'Préparé salade',
-                    description: 'préparé, dressing, tuinkers, sla, ei, tomaat, komkommer, wortel',
+                    name: 'PrÃ©parÃ© salade',
+                    description: 'prÃ©parÃ©, dressing, tuinkers, sla, ei, tomaat, komkommer, wortel',
                     priceSmall: 5.00,
                     priceLarge: 6.00,
                     image: ''
@@ -525,7 +472,7 @@ module.exports = [
                     image: ''
                 }, {
 
-                    name: 'Salade niçoise',
+                    name: 'Salade niÃ§oise',
                     description: 'tonijn, ansjovis, paprika, olijven, ui, ei, wortel, tomaat, komkommer, sla, tuinkers',
                     priceSmall: 6.00,
                     priceLarge: 7.00,
@@ -765,7 +712,7 @@ module.exports = [
                     image: ''
                 }, {
 
-                    name: 'Croque hawaï',
+                    name: 'Croque hawaÃ¯',
                     description: '',
                     priceSmall: 7.00,
                     priceLarge: null,

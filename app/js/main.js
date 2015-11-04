@@ -4,6 +4,8 @@ var angular = require('angular');
 
 // angular modules
 require('angular-ui-router');
+require('angular-sanitize');
+
 require('./templates');
 require('./controllers/_index');
 require('./services/_index');
@@ -17,7 +19,8 @@ angular.element(document).ready(function() {
     'templates',
     'app.controllers',
     'app.services',
-    'app.directives'
+    'app.directives',
+    'checklist-model'
   ];
 
   // mount on window for testing
